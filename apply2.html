@@ -1,0 +1,67 @@
+<html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOA - Подача заявки</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="logo.jpeg" alt="UOA Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index2.html">Главная</a></li>
+                    <li><a href="more-info.html">О нас</a></li>
+                    <li><a href="programs2.html">Программы</a></li>
+                    <li><a href="faculties.html">Факультеты</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Форма подачи заявки</h2>
+            <form action="mailto:aelxperience@gmail.com" method="POST" enctype="multipart/form-data">
+                <label for="first-name">Имя:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Фамилия:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dob">Дата рождения:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label>Вы поступаете как:</label>
+                <select name="degree" required>
+                    <option value="bachelor">Бакалавр</option>
+                    <option value="master">Магистратура</option>
+                    <option value="phd">Аспирантура</option>
+                </select>
+
+                <label for="city">Ваш город:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="country">Страна:</label>
+                <input type="text" id="country" name="country" required>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 UOA. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

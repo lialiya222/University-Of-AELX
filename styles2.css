@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Заголовки */
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #4e2a84; /* Фиолетовый цвет */
+}
+
+h1 {
+    font-size: 36px;
+    text-aligh:center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Стилизация навигации */
+header {
+    background-color: #4e2a84; /* Фиолетовый цвет */
+    padding: 20px 0;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header img.logo {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Секция о нас */
+.section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Стили для текста */
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Картинки */
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-box {
+    text-align: center;
+    width: 32%;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-box p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Кнопки */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4e2a84;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.button:hover {
+    background-color: #732d91;
+}
+
+/* Форма подачи заявки */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4e2a84;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #732d91;
+}
+
+/* Футер */
+footer {
+    background-color: #4e2a84;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Страницы факультетов и преподавателей */
+.faculty, .program {
+    margin-bottom: 30px;
+}
+
+.faculty h2, .program h2 {
+    color: #4e2a84;
+}
+
+.faculty p, .program p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Стили для преподавателей */
+.teacher {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.teacher img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.teacher p {
+    font-size: 18px;
+    color: #4e2a84;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .teacher {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
